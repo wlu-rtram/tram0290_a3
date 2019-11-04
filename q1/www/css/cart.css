@@ -1,0 +1,26 @@
+/* <SHOPPING_CART> */
+#cart-button:link {
+  color: white !important;
+}
+
+#cart-button:visited {
+  color: white;
+}
+
+#cart-button:hover {
+  color: blue !important;
+}
+
+#cart-button:active {
+  color: white;
+}
+
+.delete-icon {
+  color: red !important;
+}
+
+.delete-icon:hover {
+  color: red !important;
+}
+
+/* </SHOPPING_CART> */
