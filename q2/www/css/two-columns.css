@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+  font-size: 42px;
+}
+
+p {
+  color: white;
+  font-size: 18px;
+}
+
+.left-column {
+  float: left;
+  width: 50%;
+  background: #00003b;
+  padding: 20px;
+}
+
+.left-column img {
+  width: 100%;
+}
+
+.right-column {
+  float: left;
+  width: 50%;
+  background: #00003b;
+  padding: 20px;
+}
+
+.right-column img {
+  width: 100%;
+}
+
+footer {
+  background-color: #00003b;
+  padding: 10px;
+  text-align: center;
+  color: #cc003b;
+}
+
+/* Stack columns */
+@media (max-width: 600px) {
+  .left-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+}

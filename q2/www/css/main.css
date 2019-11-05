@@ -1,34 +1,76 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
 @import url(http://fonts.googleapis.com/css?family=Proza+Libre);
 
-title {
-  Font size: 34px;
-  word-spacing: -0.2rem;
-  line-height: 1.1;
-  Font color: #241c15;
+* {
+  box-sizing: border-box;
+  border-width: 100%;
 }
 
-body {
-  text-align: center;
-  font-size: 14px;
+h1 {
+  Font-size: 36px;
+  word-spacing: -0.2rem;
+  line-height: 1.1;
+  color: #241c15;
+  font-family: Merriweather;
 }
 
 p {
-    text-align: center;
-    font-size: 14px;
-    font color: red;
-
+  font-size: 14px;
+  font-family: Proza Libre;
 }
 
 form {
-  display: inline-block;
+  font-family: Proza Libre;
 }
 
-img {
-  width: 10%;
+.left-column {
+  float: left;
+  width: 30%;
+  padding: 10px;
 }
 
-.copyright {
+.left-column img {
+  width: 50%;
+  float: right;
+}
+
+.right-column {
+  float: left;
+  width: 70%;
+}
+
+copyright {
   font-size: 11px;
   Font color: rgba(36, 28, 21, 0.65);
+}
+
+/* Stack columns */
+@media (max-width: 600px) {
+  .left-column, .right-column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  .left-column, .right-column {
+    float: center;
+    width: 100%;
+    padding: 20px;
+    text-align: justify;
+  }
+
+  .left-column img {
+    width: 50%;
+    float: center;
+    text-align: justify;
+  }
 }
