@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FakeChimp’s Registration Form</title>
+  <link rel='icon' href='img/favicon.ico' type='image/x-icon' />
+  <link href="css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <script src="js/app.js" async></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="left">
+
+      <picture>
+        <source srcset="img/logo-color.png" media="(min-width: 600px)">
+        <img srcset="img/logo-black-white.png" alt="FakeChimp Logo">
+      </picture>
+
+    </div>
+
+    <div class="right">
+      <h1>Get started with your account</h1>
+      <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp’s Marketing Platform.</p>
+
+      <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+        <input type="hidden" name="student_id" id="student_id" value="160450290">
+        <p><label for="Username">Email</label><br>
+          <input type="text" name="email" id="email" maxlength="128"></p>
+        <p><label for="Username">Username</label><br>
+          <input type="text" name="username" id="username" minlength="8" maxlength="24"></p>
+        <p><label for="Username">Password</label><br>
+
+
+          <div id="show-button">
+            <label>
+            <input type="checkbox" onclick="myFunction()"><i class="fas fa-eye"></i> Show
+            </label>
+          </div>
+          <input type="text" name="password" id="password" minlength="8" maxlength="24">
+        </p>
+
+
+
+        <button type="submit" class="button button1" id="button">Get Started</button>
+        <p>By clicking the “Get Started!” button, you are creating a FakeChimp account.</p>
+      </form>
+      <p>
+        <copyright>©2019 All Rights Reserved. FakeChimp® is a registered trademark of WLUCP202 Class.</copyright>
+      </p>
+
+    </div>
+
+
+
+</body>
+
+</html>
