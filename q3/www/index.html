@@ -29,11 +29,19 @@
 
       <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
         <input type="hidden" name="student_id" id="student_id" value="160450290">
-        <p><label for="Username">Email</label><br>
+        <p><label for="Email">Email</label><br>
           <input type="text" name="email" id="email" maxlength="128"></p>
-        <p><label for="Username">Username</label><br>
-          <input type="text" name="username" id="username" minlength="8" maxlength="24"></p>
-        <p><label for="Username">Password</label><br>
+
+        <p><label for="Country">Country</label><br>
+          <input type="text" name="username" id="username"></p>
+
+        <p><label for="Description">Description</label><br>
+          <input type="text" name="description" id="description"></p>
+
+          <p><label for="Image">Avatar Image</label><br>
+            <input type="image" name="image" id="image"></p>
+
+
 
 
           <div id="show-button">
