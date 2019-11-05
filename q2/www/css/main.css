@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+@import url(http://fonts.googleapis.com/css?family=Proza+Libre);
+
+title {
+  Font size: 34px;
+  word-spacing: -0.2rem;
+  line-height: 1.1;
+  Font color: #241c15;
+}
+
+body {
+  text-align: center;
+  font-size: 14px;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    font color: red;
+
+}
+
+form {
+  display: inline-block;
+}
+
+img {
+  width: 10%;
+}
+
+.copyright {
+  font-size: 11px;
+  Font color: rgba(36, 28, 21, 0.65);
+}
