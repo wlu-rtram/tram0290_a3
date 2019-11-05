@@ -6,6 +6,7 @@ function validateEmail() {
 
   if (!test) {
     alert('Please enter a valid email address.')
+    document.getElementById("email").focus();
 
     return false;
   }
@@ -26,42 +27,16 @@ function validateEmailEmpty() {
   return true;
 }
 
-function validateUsername() {
-  var username = document.getElementById("username").value;
+function validateCountry() {
+  var country = document.getElementById("country").value;
 
-  var re = /^[a-zA-Z]+([_-]?[a-zA-Z0-9])*$/;
-  var test = re.test(String(username));
+  var re = /Canada|United States/;
+  var test = re.test(String(country));
 
-  if (!test) {
-    alert('Please enter a valid username.')
-
-    return false;
-  }
-
-  return true;
-}
-
-function validateUsernameEmpty() {
-  var email = document.getElementById("username").value;
-
-  if (email == "") {
-    alert("Empty username.");
-    document.getElementById("username").focus();
-
-    return false;
-  }
-
-  return true;
-}
-
-function validatePassword() {
-  var password = document.getElementById("password").value;
-
-  var re = /^[a-zA-Z]+([_-]?[a-zA-Z0-9])*$/;
-  var test = re.test(String(password));
 
   if (!test) {
-    alert('Please enter a valid password.')
+    alert('Please enter Canada or United States')
+    document.getElementById("country").focus();
 
     return false;
   }
@@ -69,21 +44,66 @@ function validatePassword() {
   return true;
 }
 
-function validatePasswordEmpty() {
-  var email = document.getElementById("password").value;
+function validateCountryEmpty() {
+  var country = document.getElementById("country").value;
 
-  if (email == "") {
-    alert("Empty password.");
-    document.getElementById("password").focus();
+  if (country == "") {
+    alert("Please enter a Country");
+    document.getElementById("country").focus();
 
     return false;
   }
 
   return true;
 }
+
+function validateDescription() {
+  var description = document.getElementById("description").value;
+
+  var re = /^[a-zA-Z0-9]+([_ -]?[a-zA-Z0-9.!?])*/;
+  var test = re.test(String(description));
+
+  if (!test) {
+    alert('Please enter a description.')
+    document.getElementById("description").focus();
+
+    return false;
+  }
+
+  return true;
+}
+
+function validateDescriptionEmpty() {
+  var description = document.getElementById("description").value;
+
+  if (description == "") {
+    alert("Empty description.");
+    document.getElementById("description").focus();
+
+    return false;
+  }
+
+  return true;
+}
+
+
+function validateImage() {
+  var avatarImage = document.getElementById("avatarImage").value;
+
+  if (avatarImage == "") {
+    alert("Please upload an image.");
+    document.getElementById("avatarImage").focus();
+
+    return false;
+  }
+
+  return true;
+}
+
 
 // final check//
 function validateForm() {
+
   if (!validateEmailEmpty()) {
     return false;
   }
@@ -92,31 +112,25 @@ function validateForm() {
     return false;
   }
 
-  if (!validateUsernameEmpty()) {
+  if (!validateCountryEmpty()) {
     return false;
   }
 
-  if (!validateUsername()) {
+  if (!validateCountry()) {
     return false;
   }
 
-  if (!validatePasswordEmpty()) {
+  if (!validateDescriptionEmpty()) {
     return false;
   }
 
-  if (!validatePassword()) {
+  if (!validateDescription()) {
+    return false;
+  }
+
+  if (!validateImage()) {
     return false;
   }
 
   return true;
-}
-
-//show/hide pswd//
-function myFunction() {
-  var x = document.getElementById("password");
-  if (x.type === "password") {
-    x.type = "text";
-  } else {
-    x.type = "password";
-  }
 }

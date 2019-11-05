@@ -91,12 +91,14 @@ input {
   cursor: pointer;
   font-family: Proza Libre;
 }
+
 .button1 {
   background-color: white;
   color: black;
-  border: 2px solid rgba(36,28,21, 0.5);
+  border: 2px solid rgba(36, 28, 21, 0.5);
   font-family: Proza Libre;
 }
+
 .button1:hover {
   background-color: #007c89;
   color: white;
@@ -104,34 +106,49 @@ input {
   font-family: Proza Libre;
 }
 
+select {
+  position: relative;
+  font-family: Proza Libre;
+  width: 100%;
+  -webkit-appearance: menulist-button;
+   height: 25px;
+}
+
+textarea{
+  position: relative;
+  font-family: Proza Libre;
+  width: 100%;
+}
+
 #show-button {
-    margin:4px;
-    color: #007c89;
-    overflow:auto;
-    float:right;
+  margin: 4px;
+  color: #007c89;
+  overflow: auto;
+  float: right;
 }
 
 #show-button:hover {
-    background: #00bcd1;;
+  background: #00bcd1;
+  ;
 }
 
 #show-button label {
-    float:right;
-    width:4.0em;
+  float: right;
+  width: 4.0em;
 }
 
 #show-button label span {
-    text-align:center;
-    padding:5px 0px;
-    display:block;
+  text-align: center;
+  padding: 5px 0px;
+  display: block;
 }
 
 #show-button label input {
-    position:absolute;
-    top:-30px;
+  position: absolute;
+  top: -30px;
 }
 
-#show-button input:checked + span {
-    background-color:#911;
-    color:#fff;
+#show-button input:checked+span {
+  background-color: #911;
+  color: #fff;
 }

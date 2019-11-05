@@ -6,7 +6,7 @@ function validateEmail() {
 
   if (!test) {
     alert('Please enter a valid email address.')
-
+    document.getElementById("email").focus();
     return false;
   }
 
@@ -34,6 +34,7 @@ function validateUsername() {
 
   if (!test) {
     alert('Please enter a valid username.')
+    document.getElementById("username").focus();
 
     return false;
   }
@@ -62,6 +63,7 @@ function validatePassword() {
 
   if (!test) {
     alert('Please enter a valid password.')
+    document.getElementById("password").focus();
 
     return false;
   }

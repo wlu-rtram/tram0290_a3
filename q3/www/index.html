@@ -27,35 +27,35 @@
       <h1>Get started with your account</h1>
       <p>Find your people. Engage your customers. Build your brand. Do it all with FakeChimp’s Marketing Platform.</p>
 
-      <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+<!--
+registrations live at:
+http://cp202-server.appspot.com/registrations_with_image/160450290
+-->
+
+      <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register_with_image" method="post" enctype="multipart/form-data">
         <input type="hidden" name="student_id" id="student_id" value="160450290">
         <p><label for="Email">Email</label><br>
           <input type="text" name="email" id="email" maxlength="128"></p>
 
+          <p><label for="Country">Country</label><br>
+            <input type="text" name="country" id="country"></p>
+
+<!--
         <p><label for="Country">Country</label><br>
-          <input type="text" name="username" id="username"></p>
+          <select id="country">
+            <option value="Canada">Canada</option>
+            <option value="United States">United States</option>
+          </select>
 
-        <p><label for="Description">Description</label><br>
-          <input type="text" name="description" id="description"></p>
+        -->
+          <p><label for="Description">Description</label><br>
+            <textarea id="description" name="description" rows="4"></textarea>
 
-          <p><label for="Image">Avatar Image</label><br>
-            <input type="image" name="image" id="image"></p>
+            <p><label for="Image">Image Upload</label><br>
+              <input type="file" accept=".jpg,.jpeg,.png,.gif" name="avatarImage" id="avatarImage">
 
-
-
-
-          <div id="show-button">
-            <label>
-            <input type="checkbox" onclick="myFunction()"><i class="fas fa-eye"></i> Show
-            </label>
-          </div>
-          <input type="text" name="password" id="password" minlength="8" maxlength="24">
-        </p>
-
-
-
-        <button type="submit" class="button button1" id="button">Get Started</button>
-        <p>By clicking the “Get Started!” button, you are creating a FakeChimp account.</p>
+              <button type="submit" class="button button1" id="button">Get Started</button>
+              <p>By clicking the “Get Started!” button, you are creating a FakeChimp account.</p>
       </form>
       <p>
         <copyright>©2019 All Rights Reserved. FakeChimp® is a registered trademark of WLUCP202 Class.</copyright>
