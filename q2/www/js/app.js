@@ -82,6 +82,7 @@ function validatePasswordEmpty() {
   return true;
 }
 
+// final check//
 function validateForm() {
   if (!validateEmailEmpty()) {
     return false;
@@ -110,6 +111,7 @@ function validateForm() {
   return true;
 }
 
+//show/hide pswd//
 function myFunction() {
   var x = document.getElementById("password");
   if (x.type === "password") {
